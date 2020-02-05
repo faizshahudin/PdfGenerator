@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-Policy</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body class="debit-note">
+    <div class="logo-section">
+        <img src="/images/etiqa-logo.png" />
+    </div>
+    <p>Client's Copy</p>
+    <br />
+    <div class="header">
+        <h3>DEBIT NOTE</h3>
+        <div class="field">
+            <p class="label">Trans Date:</p>
+            <p><b><%= date %></b></p>
+        </div>
+    </div>
+    <div class="field">
+        <p class="label">Name</p>
+        <p>: <b><%= name %></b></p>
+    </div>
+    <div class="field address">
+        <p class="label">Address</p>
+        <p>: <b><%= address %></b></p>
+    </div>
+    <div class="field">
+        <p class="label">Type of Policy</p>
+        <p>: <b><%= policyType %></b></p>
+    </div>
+    <div class="field">
+        <p class="label">Policy No</p>
+        <p>: <b><%= policyNo %></b></p>
+    </div>
+    <div class="field">
+        <p class="label">Period of Insurance</p>
+        <p>: <b><%= periodStart %> To <%= periodEnd %></b></p>
+    </div>
+    <div class="field">
+        <p class="label">Insured's Name</p>
+        <p>: <b><%= name %></b></p>
+    </div>
+    <div class="field address">
+        <p class="label">Address</p>
+        <p>: <b><%= address %></b></p>
+    </div>
+    <div class="bank-section">
+        <div class="field">
+            <p class="label">Maybank Code</p>
+            <p>: <b><%= maybankCode %></b></p>
+        </div>
+        <div class="field" style="margin-left: 100px;">
+            <p class="label">Maybank Branch:</p>
+            <p><b><%= maybankBranch %></b></p>
+        </div>
+    </div>
+    <br />
+    <div class="price-breakdown">
+        <div class="row">
+            <p><b>Particulars</b></p>
+            <p><b>Amount (USD)</b></p>
+        </div>
+        <div class="row">
+            <p>Premium</p>
+            <p class="price"><b><%= premium %></b></p>
+        </div>
+        <div class="row">
+            <p>Admin Fee</p>
+            <p class="price"><b><%= adminFee %></b></p>
+        </div>
+        <div class="row">
+            <p>Total Due</p>
+            <p class="price" style="text-decoration:underline;"><b><%= total %></b></p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-Policy</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body class="epolicy">
+    <div class="logo-section" style="margin-bottom:20px; margin-top: -50px;">
+        <img src="/images/etiqa-logo.png" />
+    </div>
+
+    <div class="insured-detail-row">
+        <div class="left">
+            <p style="margin-top:0px;">Insured Person</p>
+            <p><b><%= name %></b></p>
+            <p><b><%= address %></b></p>
+        </div>
+        <div class="right">
+            <div class="field">
+                <p class="label">Policy No.</p>
+                <p>: <b><%= policyNo %></b></p>
+            </div>
+            <div class="field">
+                <p class="label">Replacing Policy No.</p>
+                <p>: <b><%= repPolicyNo %></b></p>
+            </div>
+            <div class="field">
+                <p class="label">Account No.</p>
+                <p>: <b><%= accountNo %></b></p>
+            </div>
+            <div class="field">
+                <p class="label">Agent Name</p>
+                <p>: <b><%= agentName %></b></p>
+            </div>
+            <div class="field">
+                <p class="label">Product Name</p>
+                <p>: <b><%= productName %></b></p>
+            </div>
+            <p>Period of Insurance <b><%= periodStart %></b> To <b><%= periodEnd %></b> (both dates inclusive). Any
+                subsequent period for which the
+                Insured Person shall pay and the Company shall agree to accept a renewal premium.</p>
+        </div>
+    </div>
+
+    <div class="premium-row">
+        <div class="left">
+            <p style="margin-top:0px;">Premium</p>
+            <p>+ Administrative Fee</p>
+            <p>Total Premium Due</p>
+        </div>
+        <div class="right">
+            <div style="width:max-content;margin: 0px auto;">
+                <p><b>USD <%= premium %></b></p>
+                <p><b>USD <%= adminFee %></b></p>
+                <p style="text-decoration: underline;"><b>USD <%= total %></b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="insured-row">
+        <div class="left">
+            <div class="text-wrapper">
+                <p class="no-margin"><b>Details of Insured Person</b></pclss>
+            </div>
+            <div class="text-wrapper">
+                <p class="no-margin"><b>Name</b></p>
+            </div>
+            <div class="text-wrapper">
+                <p class="no-margin"><b>Identity Card</b></p>
+            </div>
+            <div class="text-wrapper" style="border-bottom: 1px solid black;">
+                <p class="no-margin"><b>Occupartion</b></p>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="text-wrapper" style="border-left:0px; height:11px;">
+            </div>
+            <div class="text-wrapper">
+                <p class="no-margin"><%= name %></p>
+            </div>
+            <div class="text-wrapper">
+                <p class="no-margin"><%= idNo %></p>
+            </div>
+            <div class="text-wrapper" style="border-bottom: 1px solid black;">
+                <p class="no-margin"><%= occupation %></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="breakdown-row">
+        <div class="left">
+            <div style="width:35%;">
+                <div class="text-wrapper">
+                    <p class="no-margin" style="text-align: center;"><b>No.</b></p>
+                </div>
+                <div class="text-wrapper">
+                    <p class="no-margin" style="text-align: center;">01</p>
+                </div>
+                <div class="text-wrapper">
+                    <p class="no-margin" style="text-align: center;">02</p>
+                </div>
+                <div class="text-wrapper" style="border-bottom: 1px solid black;">
+                    <p class="no-margin" style="text-align: center;">03</p>
+                </div>
+            </div>
+            <div style="width:65%;">
+                <div class="text-wrapper">
+                    <p class="no-margin" style="text-align: center;"><b>Benefit/Event</b></p>
+                </div>
+                <div class="text-wrapper">
+                    <p class="no-margin">Death</p>
+                </div>
+                <div class="text-wrapper">
+                    <p class="no-margin">Permanent Disablement</p>
+                </div>
+                <div class="text-wrapper" style="border-bottom: 1px solid black;">
+                    <p class="no-margin">Medical Expenses</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="text-wrapper" style="padding-right: 40px; border-right: 1px solid black;">
+                <p class="no-margin" style="text-align: right;"><b>Sum Insured</b></p>
+            </div>
+            <div class="text-wrapper" style="padding-right: 40px; border-right: 1px solid black;">
+                <p class="no-margin" style="text-align: right;"><b>USD <%= deathSi %></b></p>
+            </div>
+            <div class="text-wrapper" style="padding-right: 40px; border-right: 1px solid black;">
+                <p class="no-margin" style="text-align: right;"><b>USD <%= disableSi %></b></p>
+            </div>
+            <div class="text-wrapper"
+                style="padding-right: 40px; border-right: 1px solid black; border-bottom: 1px solid black;">
+                <p class="no-margin" style="text-align: right;"><b>USD <%= medicSi %></b></p>
+            </div>
+        </div>
+    </div>
+    <div class="policy-detail-row">
+        <p><b>This policy is subject to the following Warranties, Endorsement and Clauses applicable stated:</b></p>
+
+        <div class="clauses">
+            <p><b>REPATRIATION ALLOWANCE</b></p>
+            <p>It is agreed that in the event of the accidental death of the Insured Person which occurred outside
+                Cambodia,
+                the Company shall pay a repatriation allowance an amount of USD$200 for the expenses to return the
+                mortal
+                remains of the Insured Person back to Cambodia or to his/her country of origin upon receipt of due proof
+                death in the form required by the Company.</p>
+        </div>
+        <div class="clauses">
+            <p><b>FUNERAL ALLOWANCE</b></p>
+            <p>Notwithstanding anything contained in the Policy to the contrary, it is hereby declared and agreed that
+                the
+                Company shall pay a death benefit from whatsoever cause other than accidental death as funeral benefits
+                an
+                amount of US$200 upon receipt of due proof death in the form required by the Company.</p>
+        </div>
+        <div class="clauses">
+            <p><b>24 HOURS WORLDWIDE</b></p>
+            <p>It is hereby declared and agreed that this Policy is covered 24 hours and without geographical
+                limitations.
+            </p>
+        </div>
+        <div class="clauses">
+            <p><b>DISAPPEARANCE</b></p>
+            <p>It is agreed that in the event of the disappearance of the Insured Person for a period of one year, the
+                Company shall in their sole direction decide whether there is sufficient evidence and reason to believe
+                that
+                the Accidental death of the Insured Person has occurred and if the event constitutes as a death under
+                the
+                Policy.
+
+                In the event that the Insured Person is found to be living after the Company has made payment to the
+                Insured Person’s executor or administrators for the Insured Person’s “death”, the Insured Person’s
+                executor
+                or administrators shall refund the payment received to the Company.</p>
+        </div>
+        <div class="clauses">
+            <p><b>ALL NATURAL DISASTER CLAUSE</b></p>
+            <p>It is hereby declared and agreed that this Policy is extended to cover Bodily Injury as herein defined
+                caused
+                by, arising from or attributable to all natural disasters.</p>
+        </div>
+        <div class="clauses">
+            <p><b>SNAKE BITES AND INSECT BITES</b></p>
+            <p>It is hereby declared and agreed that this Policy is extended to cover death or permanent disablement to
+                the
+                Insured Person arising from harmful insect and snakebites.</p>
+        </div>
+        <div class="clauses">
+            <p><b>MOTORCYCLING RISK</b></p>
+            <p>It is hereby declared and agreed that this policy extends to cover the Insured Person whilst motorcycling
+                for
+                private or business purpose, provided always that the Company shall not be liable for any claim arising
+                out
+                of racing, peacemaking or participation of the Insured in any speed contests reliability or other
+                trials.
+            </p>
+        </div>
+        <div class="clauses" style="margin-bottom: 5px;">
+            <p><b>EXPOSURE CLAUSE</b></p>
+            <p>It is hereby declared and agreed that subject to all terms limitations conditions and exclusions of this
+                Policy except specifically provided herein, this Policy covers claims arising out of bodily injury
+                caused by
+                exposure to the elements as a result of an accident covered hereunder provided that in the event of
+                death of
+                the Insured person caused by exposure to the elements, this death is subject to a properly constituted
+                Judicial body Enquiry by which it is found that the Insured died of exposure as a result of an accident.
+            </p>
+        </div>
+    </div>
+    <div class="policy-detail-row" style="border-top:1px solid black;">
+        <div class=" clauses">
+            <p><b>ACCIDENTAL GAS INHALATION, DROWNING AND FOOD POISONING CLAUSE</b></p>
+            <p>It is hereby declared and agreed that this policy is extended to cover the Insured Person against Death
+                or
+                Permanent Disablement as herein defined arising out of or resulting from Accidental Gas Inhalation,
+                Drowning, Food Poisoning or other similar misfortune with or without any sign of external or violent
+                visible
+                injury.</p>
+        </div>
+        <div class="clauses">
+            <p><b>AMATEUR SPORTS CLAUSE</b></p>
+            <p>Notwithstanding anything contained to the contrary it is hereby declared and agreed that this Policy is
+                extended to cover death loss or disability as defined in the within Policy whilst the Insured is engage
+                in
+                amateur sport and provided such amateur sport is undertaken by the Insured as an occasioned recreation
+                for
+                short periods and not as a professional.
+
+                No benefit shall be payable for an event caused directly or indirectly whilst the Insured is engaged in
+                water skiing, sledging tobogganing, racing of any kind, boxing, wrestling, any form of unarmed combat,
+                winter sport, ice hockey, polo, underwater activities requiring breathing apparatus, water ski-jumping,
+                pot-holing, caving, parachuting, hang-gliding, steeplechasing, show jumping, boating and yachting.</p>
+        </div>
+        <div class="clauses">
+            <p><b>MOUNTAINEERING ENDORSEMENT</b></p>
+            <p>It is hereby declared and agreed that the insurance granted under this Policy is extended to include the
+                risks of bodily injury as within defined caused or arising whilst the Insured is involved in
+                mountaineering
+                (excluding the use of ropes and other climbing equipment) within the Kingdom of Cambodia.</p>
+        </div>
+        <div class="clauses">
+            <p><b>FOOTBALL CLAUSE</b></p>
+            <p>Notwithstanding anything herein contained to the contrary, it is hereby declared that this Policy is
+                extended
+                to cover Death or Disablement as within defined caused arising whilst the Insured is engaging in playing
+                non-professional football.</p>
+        </div>
+        <div class="clauses">
+            <p><b>SPORTS AND SOCIAL ACTIVITIES CLAUSE</b></p>
+            <p>It is hereby declared and agreed that notwithstanding anything contained herein to the contrary, this
+                policy
+                is extended to cover the Insured or Insured person(s) for death or disablement arising from or
+                participating
+                in any indoor or outdoor sports or social activities as an amateur.</p>
+        </div>
+        <p>This benefit will also be applicable if the Insured Person has purchased Medical Expenses cover.</p>
+        <p>Subject otherwise to the terms, conditions and exclusion of the policy.</p>
+    </div>
+    <div class="epolicy-footer">
+        <div>
+            <div class="field">
+                <p class="label">Issue Date</p>
+                <p>: <b><%= date %></b></p>
+            </div>
+            <div class="field">
+                <p class="label">Issue At</p>
+                <p>: <b><%= issueAt %></b></p>
+            </div>
+            <div class="field">
+                <p class="label">Issue By</p>
+                <p>: <b><%= issueBy %></b></p>
+            </div>
+        </div>
+        <div>
+            <p class="no-margin">For and on behalf of</p>
+            <p class="no-margin"><b>Etiqa General Insurance (Cambodia) Plc.</b></p>
+        </div>
+    </div>
+</body>
+
+</html>

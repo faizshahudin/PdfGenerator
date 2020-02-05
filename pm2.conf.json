@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "docgen",
+      "script": "./src/bin/www",
+      "instances": 2,
+      "exec_mode": "cluster",
+      "time": true,
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": "3011",
+        "FILE_PATH": "/home/etiqa/Documents/kh_api/policies",
+        "BASE_URL": "http://127.0.0.1:3011"
+      }
+    }
+  ]
+}

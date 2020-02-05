@@ -1,0 +1,296 @@
+body {
+  padding: 50px;
+  /* font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif; */
+  font-family: Arial;
+}
+
+a {
+  color: #00b7ff;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+p {
+  font-size: 9.5px;
+}
+
+.policy-summary .label {
+  width: 100px;
+}
+
+.debit-note p {
+  font-size: 11px;
+}
+
+.debit-note .field p {
+  margin: 5px 0px;
+}
+
+.debit-note .address {
+  margin-bottom: 30px;
+}
+
+.debit-note .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.debit-note .header h3 {
+  font-size: 14px;
+}
+
+.debit-note .header .field {
+  margin-left: 300px;
+}
+
+.debit-note .header .label {
+  width: initial;
+}
+
+.debit-note .label {
+  width: 100px;
+}
+
+.bank-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.price-breakdown {
+  margin-left: 300px;
+}
+
+.price-breakdown .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.price-breakdown .row p {
+  width: 150px;
+  margin: 5px 0px !important;
+}
+
+.price-breakdown .price {
+  text-align: right;
+  width: 50px !important;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  right: 58px;
+  left: 58px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer h5 {
+  margin: 2px 0px;
+  font-size: 8px;
+}
+
+.footer span {
+  font-weight: 400;
+}
+
+.footer p {
+  font-size: 6px;
+  margin: 2px 0px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-contact p {
+  margin-right: 10px;
+}
+
+.footer-contact h5 {
+  margin-left: 20px;
+  color: #ffbc03;
+}
+
+.footer-right h5 {
+  text-align: right;
+  color: #ffbc03;
+}
+
+.footer-right .logo-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-right .logo-wrap img {
+  width: 50px;
+  margin-left: 5px;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.logo-section img {
+  width: 150px;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+}
+
+.field .label {
+  margin-right: 10px;
+}
+
+.field p {
+  margin: 2px 0px;
+  font-size: 10px;
+}
+
+.content-body {
+  margin-top: 40px;
+}
+
+.content-body h3 {
+  font-size: 10px !important;
+}
+
+.clauses {
+  margin-bottom: 20px;
+}
+
+.clauses p {
+  margin: 0px;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.epolicy .insured-detail-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.epolicy .insured-detail-row .left {
+  border: 1px solid black;
+  width: 50%;
+  padding: 5px;
+}
+
+.epolicy .insured-detail-row .right {
+  border: 1px solid black;
+  border-left: 0px;
+  width: 50%;
+  padding: 5px;
+}
+
+.epolicy .insured-detail-row .right .label {
+  width: 95px;
+}
+
+.epolicy .premium-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.epolicy .premium-row .left {
+  width: 50%;
+  padding: 5px;
+  border: 1px solid black;
+  border-right: 0px;
+}
+
+.epolicy .premium-row .right {
+  width: 50%;
+  padding: 5px auto;
+  border: 1px solid black;
+  border-left: 0px;
+}
+
+.epolicy .insured-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.epolicy .insured-row .left {
+  width: 35%;
+}
+
+.epolicy .insured-row .left .text-wrapper {
+  padding: 5px;
+  border: 1px solid black;
+  border-bottom: 0px;
+  border-right: 0px;
+}
+
+.epolicy .insured-row .right {
+  width: 65%;
+}
+
+.epolicy .insured-row .right .text-wrapper {
+  padding: 5px;
+  border: 1px solid black;
+  border-bottom: 0px;
+}
+
+.epolicy .breakdown-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.epolicy .breakdown-row .left {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+}
+
+.text-wrapper {
+  padding: 5px;
+  border: 1px solid black;
+  border-bottom: 0px;
+  border-right: 0px;
+}
+
+.epolicy .breakdown-row .right {
+  width: 65%;
+}
+
+.epolicy .policy-detail-row {
+  padding: 5px;
+  border: 1px solid black;
+  border-top: 0px;
+}
+
+.epolicy-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding: 0px 10px;
+}
+
+.epolicy-footer .label {
+  width: 80px;
+}
